@@ -1,0 +1,41 @@
+body {
+  font-size: 16px;
+}
+h1 {
+  font-family: sans-serif;
+  font-size: 65px;
+  color: orange;
+}
+/* 
+  A unidade de medida rem, vai transformar o font-size do elemento p
+  em três vezes o tamanho do elemento padrão (body) que tem 16px.
+*/
+p {
+  font-size: 3rem;
+  font-weight: 600;
+}
+li {
+  font-style: italic;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+/*
+  A pseudo-classe 'nth-child' seleciona elementos dentre uma árvore de elementos 
+  se referindo a posição específica de cada um.
+*/
+li:nth-child(1) {
+  color: brown;
+  background-color: yellow;
+}
+li:nth-child(2) {
+  color: white;
+  background-color: red;
+}
+li:nth-child(3) {
+  color: white;
+  background-color: brown;
+}
+.background-gray-light {
+  background-color: #eee;
+}
