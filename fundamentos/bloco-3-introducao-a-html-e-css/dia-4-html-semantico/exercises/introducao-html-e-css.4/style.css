@@ -1,3 +1,14 @@
 /* HEADER */
+
 /* mAIN */
+
+.image-container {
+  width: 240px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* fOOTER */
