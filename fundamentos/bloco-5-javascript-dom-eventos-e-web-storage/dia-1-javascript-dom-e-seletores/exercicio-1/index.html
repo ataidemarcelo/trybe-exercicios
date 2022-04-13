@@ -69,6 +69,13 @@
       }
       let background = 'rgb(76,164,109)';
       modifyBackgroundColor(background);
+
+      // Crie uma função que mude a cor do quadrado vermelho para branco
+      function modifyBackgroundColorRed (background) {
+        document.getElementsByClassName('center-content')[0].style.background = background;
+      }
+      let backgroundWhite = 'white';
+      modifyBackgroundColorRed(backgroundWhite);
     </script>
   </body>
 </html>
