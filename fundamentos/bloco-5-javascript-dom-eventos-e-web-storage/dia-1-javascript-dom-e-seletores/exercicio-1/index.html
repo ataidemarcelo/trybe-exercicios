@@ -54,13 +54,21 @@
         Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
         Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
-
+      
+      // Crie uma função que mude o texto na tag <p>
       function modifyTagPText (text) {
         document.getElementsByTagName('p')[0].innerText = text;
       }
       
       let text = 'Descrição de como me vejo daqui a 2 anos';
       modifyTagPText(text);
+
+      // Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+      function modifyBackgroundColor (background) {
+        document.getElementsByClassName('main-content')[0].style.background = background;
+      }
+      let background = 'rgb(76,164,109)';
+      modifyBackgroundColor(background);
     </script>
   </body>
 </html>
