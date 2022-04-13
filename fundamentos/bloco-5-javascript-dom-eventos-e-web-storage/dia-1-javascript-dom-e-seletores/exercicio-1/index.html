@@ -93,6 +93,15 @@
       }
       
       modifyTagPTextToUpperCase();
+
+      // Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+      function log () {
+        let tagsP = document.getElementsByTagName('p');
+        for (let tag of tagsP) {
+          console.log(tag.innerText);
+        }
+      }
+      log()
     </script>
   </body>
 </html>
