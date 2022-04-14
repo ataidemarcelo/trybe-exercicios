@@ -117,6 +117,18 @@
       rightSection.appendChild(ul);
 
       // 9 - Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+      const firstTagH3 = document.createElement('h3');
+      firstTagH3.innerText = 'Primeira Tag H3';
+
+      const secondTagH3 = document.createElement('h3');
+      secondTagH3.innerText = 'Segunda Tag H3';
+
+      const thirdTagH3 = document.createElement('h3');
+      thirdTagH3.innerText = 'Terceira Tag H3'
+
+      main.prepend(thirdTagH3);
+      main.prepend(secondTagH3);
+      main.prepend(firstTagH3);
 
       // 10 - Adicione a classe title na tag h1 criada;
       // 11 - Adicione a classe description nas 3 tags h3 criadas;
