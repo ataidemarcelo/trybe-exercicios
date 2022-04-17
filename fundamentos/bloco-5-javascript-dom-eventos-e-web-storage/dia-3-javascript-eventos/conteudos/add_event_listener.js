@@ -24,6 +24,8 @@ const myWebpage = document.getElementById('my-spotrybefy');
 
 // Segue abaixo um exemplo do uso de event.target:
 
+const tagsLi = document.querySelectorAll('li');
+console.log(tagsLi);
 
 function resetText(event) {
   // O Event é passado como um parâmetro para a função.
@@ -33,6 +35,9 @@ function resetText(event) {
 }
 
 function addClassTech (event) {
+  for (let li of tagsLi) {
+    li.className = '';
+  }
   event.target.className = 'tech';
 }
 
