@@ -32,8 +32,14 @@ function addDaysOfTheMonth () {
       }
     }
 
+    const fridayList = [4, 11, 18, 25];
+    for (let friday of fridayList) {
+      if (dezDaysList[index] === friday) {
+        dayMonthItem.classList.add('friday');
+      }
+    }
+
     dayMonthItem.innerHTML = dayDez;
-    // console.log(dayMonthItem);
 
     daysContainer.appendChild(dayMonthItem);
   }
