@@ -58,6 +58,12 @@ function goToGoogle () {
 
 myWebpage.addEventListener('dblclick', goToGoogle);
 
+function changeColor (event) {
+  event.target.style.color = 'red';
+}
+
+myWebpage.addEventListener('mouseover', changeColor);
+
 // Não precisa passar o parâmetro dentro da callback resetText. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
 // event.target na nossa função retornará o objeto 'firstLi'.
