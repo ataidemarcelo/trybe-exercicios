@@ -52,6 +52,12 @@ input.addEventListener('keyup', (event) => {
   document.querySelector('.tech').innerText = event.target.value;
 });
 
+function goToGoogle () {
+  window.location.href = 'https://google.com';
+}
+
+myWebpage.addEventListener('dblclick', goToGoogle);
+
 // Não precisa passar o parâmetro dentro da callback resetText. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
 // event.target na nossa função retornará o objeto 'firstLi'.
