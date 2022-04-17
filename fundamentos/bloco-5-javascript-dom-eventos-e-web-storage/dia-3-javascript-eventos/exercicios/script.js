@@ -25,7 +25,15 @@ function addDaysOfTheMonth () {
     const dayMonthItem = document.createElement('li');
     dayMonthItem.className = 'day';
 
+    const holidayList = [24, 25, 31];
+    for (let holiday of holidayList) {
+      if (dezDaysList[index] === holiday) {
+        dayMonthItem.classList.add('holiday');
+      }
+    }
+
     dayMonthItem.innerHTML = dayDez;
+    // console.log(dayMonthItem);
 
     daysContainer.appendChild(dayMonthItem);
   }
