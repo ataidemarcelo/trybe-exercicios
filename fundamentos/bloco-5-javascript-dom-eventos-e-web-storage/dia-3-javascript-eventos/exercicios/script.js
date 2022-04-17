@@ -58,3 +58,21 @@ function createHolidaysButton (str) {
 }
 
 createHolidaysButton('Feriados')
+
+// Exercício 3:
+const btnHoliday = document.querySelector('#btn-holiday');
+console.log(btnHoliday);
+
+btnHoliday.addEventListener('click', togglesColorForHolidays);
+
+function togglesColorForHolidays () {
+  const daysHoliday = document.getElementsByClassName('holiday');
+
+  for (let day of daysHoliday) {
+    if (day.style.backgroundColor === 'white') {
+      day.style.backgroundColor = "rgb(238,238,238)";
+    } else {
+      day.style.backgroundColor = 'white';
+    }
+  }
+}
