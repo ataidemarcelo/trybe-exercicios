@@ -76,3 +76,15 @@ function togglesColorForHolidays () {
     }
   }
 }
+
+// Exercício 4:
+function createFridaysButton (str) {
+  const buttonsContainer = document.querySelector('.buttons-container');
+  const btnFriday = document.createElement('button');
+  btnFriday.innerText = str;
+  btnFriday.id = 'btn-friday';
+
+  buttonsContainer.appendChild(btnFriday);
+}
+
+createFridaysButton('Sexta-feira');
