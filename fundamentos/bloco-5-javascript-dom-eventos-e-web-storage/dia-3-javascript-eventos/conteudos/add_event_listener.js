@@ -32,7 +32,19 @@ function resetText(event) {
   // que retorna o objeto que disparou o evento.
 }
 
+function addClassTech (event) {
+  event.target.className = 'tech';
+}
+
 firstLi.addEventListener('dblclick', resetText);
+
+firstLi.addEventListener('click', addClassTech);
+secondLi.addEventListener('click', addClassTech);
+thirdLi.addEventListener('click', addClassTech);
+
+// firstLi.addEventListener('click', function () {
+//   firstLi.classList.add('tech');
+// })
 
 // Não precisa passar o parâmetro dentro da callback resetText. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
