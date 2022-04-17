@@ -47,9 +47,10 @@ firstLi.addEventListener('click', addClassTech);
 secondLi.addEventListener('click', addClassTech);
 thirdLi.addEventListener('click', addClassTech);
 
-// firstLi.addEventListener('click', function () {
-//   firstLi.classList.add('tech');
-// })
+input.addEventListener('keyup', (event) => {
+  // document.querySelector('.tech').innerText = 'Texto Alterado!';
+  document.querySelector('.tech').innerText = event.target.value;
+});
 
 // Não precisa passar o parâmetro dentro da callback resetText. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
