@@ -46,3 +46,15 @@ function addDaysOfTheMonth () {
 }
 
 addDaysOfTheMonth();
+
+// Exercício 2:
+function createHolidaysButton (str) {
+  const buttonsContainer = document.querySelector('.buttons-container');
+  const btnHoliday = document.createElement('button');
+  btnHoliday.innerText = str;
+  btnHoliday.id = 'btn-holiday';
+
+  buttonsContainer.appendChild(btnHoliday);
+}
+
+createHolidaysButton('Feriados')
