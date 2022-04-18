@@ -143,3 +143,15 @@ function addTask (str) {
 }
 
 addTask('Cozinhar!');
+
+// Exercício 8:
+function addCaption (color) {
+  const div = document.createElement('div');
+  div.className = 'task';
+  div.style.backgroundColor = color;
+
+  myTasks.appendChild(div);
+}
+
+addCaption('green');
+
