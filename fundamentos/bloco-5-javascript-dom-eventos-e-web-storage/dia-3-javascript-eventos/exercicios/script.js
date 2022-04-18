@@ -131,3 +131,15 @@ function zoom () {
 }
 
 zoom();
+
+// Exercício 7:
+const myTasks = document.querySelector('.my-tasks');
+
+function addTask (str) {
+  const task = document.createElement('span');
+  task.innerText = str
+
+  myTasks.appendChild(task);
+}
+
+addTask('Cozinhar!');
