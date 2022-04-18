@@ -61,8 +61,6 @@ createHolidaysButton('Feriados')
 
 // Exercício 3:
 const btnHoliday = document.querySelector('#btn-holiday');
-console.log(btnHoliday);
-
 btnHoliday.addEventListener('click', togglesColorForHolidays);
 
 function togglesColorForHolidays () {
@@ -88,3 +86,23 @@ function createFridaysButton (str) {
 }
 
 createFridaysButton('Sexta-feira');
+
+// Exercício 5:
+const btnFriday = document.querySelector('#btn-friday');
+btnFriday.addEventListener('click', togglesTextForFridayDays);
+let days = [];
+
+function togglesTextForFridayDays () {
+  const daysFriday = document.getElementsByClassName('friday');
+
+  let index = 0;
+  for (let day of daysFriday) {
+    if (day.innerText === 'SEXTOU!!') {
+      day.innerText = days[index];
+      index += 1;
+    } else {
+      days.push(day.innerText);
+      day.innerText = 'SEXTOU!!';
+    }
+  }
+}
