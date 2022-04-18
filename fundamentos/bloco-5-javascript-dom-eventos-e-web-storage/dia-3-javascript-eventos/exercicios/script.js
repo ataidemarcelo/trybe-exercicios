@@ -23,6 +23,7 @@ function addDaysOfTheMonth () {
   for (let index = 0; index < dezDaysList.length; index += 1) {
     const dayDez = dezDaysList[index];
     const dayMonthItem = document.createElement('li');
+    dayMonthItem.style.height = '50px';
     dayMonthItem.className = 'day';
 
     const holidayList = [24, 25, 31];
@@ -106,3 +107,27 @@ function togglesTextForFridayDays () {
     }
   }
 }
+
+// Exercício 6:
+const items = document.getElementsByClassName('day');
+
+function zoom () {
+  for (let index = 0; index < items.length; index += 1) {
+    items[index].addEventListener('mouseover', function (event) {
+      event.target.style.fontSize = '2.2rem';
+      event.target.style.marginTop = '-20px';
+      event.target.style.backgroundColor = 'white';
+      event.target.style.color = 'green';
+    });
+  }
+  for (let index = 0; index < items.length; index += 1) {
+    items[index].addEventListener('mouseleave', function (event) {
+      event.target.style.fontSize = '1rem';
+      event.target.style.marginTop = '0';
+      event.target.style.backgroundColor = 'rgb(238,238,238)';
+      event.target.style.color = '#666';
+    });
+  }
+}
+
+zoom();
