@@ -155,3 +155,21 @@ function addCaption (color) {
 
 addCaption('green');
 
+// Exercício 9:
+function selectTask () {
+  const task = document.querySelector('.task');
+  task.addEventListener('click', function (event) {
+    const bg = event.target.style.backgroundColor;
+    if (event.target.classList.value === 'task') {
+      event.target.classList.add('selected');
+      task.previousSibling.style.color = bg;
+      task.previousSibling.style.fontWeight = 'bold';
+    } else {
+      event.target.classList.remove('selected');
+      task.previousSibling.style.color = 'rgb(119,119,119)';
+      task.previousSibling.style.fontWeight = 'normal';
+    }
+  });
+}
+
+selectTask();
