@@ -23,6 +23,7 @@ function addDaysOfTheMonth () {
   for (let index = 0; index < dezDaysList.length; index += 1) {
     const dayDez = dezDaysList[index];
     const dayMonthItem = document.createElement('li');
+    dayMonthItem.style.color = '#666';
     dayMonthItem.style.height = '50px';
     dayMonthItem.className = 'day';
 
@@ -117,15 +118,15 @@ function zoom () {
       event.target.style.fontSize = '2.2rem';
       event.target.style.marginTop = '-20px';
       event.target.style.backgroundColor = 'white';
-      event.target.style.color = 'green';
+      // event.target.style.color = 'green';
     });
   }
   for (let index = 0; index < items.length; index += 1) {
     items[index].addEventListener('mouseleave', function (event) {
-      event.target.style.fontSize = '1rem';
+      event.target.style.fontSize = '1.1rem';
       event.target.style.marginTop = '0';
       event.target.style.backgroundColor = 'rgb(238,238,238)';
-      event.target.style.color = '#666';
+      // event.target.style.color = '#666';
     });
   }
 }
@@ -173,3 +174,30 @@ function selectTask () {
 }
 
 selectTask();
+
+// Exercício 10:
+const task = document.querySelector('.task');
+
+function addTaskColor () {
+  const dayOfTheMonth = document.querySelectorAll('.day');
+
+  for (let index = 0; index < dayOfTheMonth.length; index += 1) {
+    let currentColorOfTheDay = dayOfTheMonth[index].style.color;
+
+    dayOfTheMonth[index].addEventListener('click', function (event) {
+      let selectedTask = document.querySelector('.selected');
+
+      if (selectedTask && event.target.style.color === currentColorOfTheDay) {
+        let colorSelectedTask = selectedTask.style.backgroundColor;
+        event.target.style.color = colorSelectedTask;
+        event.target.style.fontWeight = 'bold';
+      } else {
+        event.target.style.color = currentColorOfTheDay;
+        event.target.style.fontWeight = 'normal';
+      }
+    });
+  }
+  
+}
+
+addTaskColor();
