@@ -201,3 +201,40 @@ function addTaskColor () {
 }
 
 addTaskColor();
+
+
+// Bônus
+function addAppointments () {
+  const input = document.getElementById('task-input');
+  const button = document.getElementById('btn-add');
+  let inputText = '';
+  console.log(input);
+  console.log(button);
+
+  input.addEventListener('keyup', function (event) {
+    inputText = event.target.value;
+  });
+
+  function addAppointment() {
+    if (inputText === '') {
+      alert('Você deve prencher com um Compromisso!');
+    }
+    let appointment = inputText;
+    let li = document.createElement('li');
+    let ul = document.querySelector('.task-list');
+    li.innerText = appointment;
+    ul.appendChild(li);
+    input.value = '';
+    inputText = '';
+  }
+  
+  button.addEventListener('click', addAppointment);
+
+  input.addEventListener('keypress', function (event) {
+    if (event.key === 'Enter') {
+      addAppointment();
+    }
+  });
+}
+
+addAppointments();
