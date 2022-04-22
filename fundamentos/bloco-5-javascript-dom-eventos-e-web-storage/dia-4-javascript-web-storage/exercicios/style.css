@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 32px;
+  text-align: center;
+}
+header {
+  padding-top: 48px;
+}
+
+section {
+  padding: 32px 0;
+}
