@@ -108,7 +108,7 @@ hr {
   height: 6px;
   border: 0;
   border-radius: 4px;
-  margin-top: 32px;
+  margin: 16px;
 }
 
 /* FOOTER */
@@ -124,6 +124,16 @@ hr {
   justify-content: center;
   height: 80px;
   padding: 16px;
+}
+
+@media (max-width: 1366px) {
+  .wrapper {
+    height: auto;
+  }
+  .footer {
+    background-color: white;
+    border: 0;
+  }
 }
 
 @media (max-width: 720px) {
