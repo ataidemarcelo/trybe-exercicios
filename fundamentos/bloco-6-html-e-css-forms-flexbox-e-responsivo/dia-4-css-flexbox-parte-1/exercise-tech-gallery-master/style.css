@@ -17,3 +17,33 @@
   width: 25px;
   margin-left: 10px;
 }
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.header-content h1 {
+  font-size: 1.1rem;
+}
+
+.header-content h3 {
+  font-size: 0.8rem;
+  color: gray;
+  cursor: pointer;
+}
