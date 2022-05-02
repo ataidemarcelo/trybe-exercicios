@@ -83,12 +83,30 @@
   display: flex;
 }
 
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  padding: 32px;
+  background-color: rgb(247, 250, 252);
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px gray;
+}
+
+.gallery-item h4 {
+  color: gray;
+  margin-bottom: 16px;
+}
+
 hr {
   background-color: rgb(197, 191, 191);
   width: 200px;
-  height: 4px;
+  height: 6px;
   border: 0;
   border-radius: 4px;
+  margin-top: 32px;
 }
 
 /* FOOTER */
@@ -104,4 +122,40 @@ hr {
   justify-content: center;
   height: 80px;
   padding: 16px;
+}
+
+@media (max-width: 720px) {
+  .gallery-box {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .sub-title {
+    font-size: 1rem;
+  }
+
+  .header h1 {
+    font-size: 0.8rem;
+  }
+
+  .header h3 {
+    font-size: 0.6rem;
+  }
+
+  .header-img {
+    width: 40px;
+  }
+
+  .description-content p {
+    font-size: 0.8rem;
+  }
+  
+  .gallery-img {
+    width: 100px;
+  }
+
+  hr {
+    margin: 16px 0;
+  }
 }
