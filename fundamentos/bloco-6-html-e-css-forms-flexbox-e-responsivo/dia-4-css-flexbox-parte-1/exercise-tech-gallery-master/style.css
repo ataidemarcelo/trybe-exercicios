@@ -148,6 +148,7 @@ hr {
   }
 
   .description-content p {
+    text-align: center;
     font-size: 0.8rem;
   }
   
@@ -157,5 +158,6 @@ hr {
 
   hr {
     margin: 16px 0;
+    height: 4px;
   }
 }
