@@ -18,10 +18,22 @@
   margin-left: 10px;
 }
 
+/* ==== Meu CSS ===== */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .container {
   width: 100%;
   max-width: 1280px;
   margin: auto;
+}
+
+.sub-title {
+  color: gray;
+  padding: 16px 0;
 }
 
 /* HEADER */
@@ -46,4 +58,50 @@
   font-size: 0.8rem;
   color: gray;
   cursor: pointer;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+}
+
+.description-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.gallery-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-box {
+  display: flex;
+}
+
+hr {
+  background-color: rgb(197, 191, 191);
+  width: 200px;
+  height: 4px;
+  border: 0;
+  border-radius: 4px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: rgb(247, 250, 252);
+  border-top: 1px solid rgb(197, 191, 191);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  padding: 16px;
 }
