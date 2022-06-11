@@ -1,0 +1,183 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.header-img {
+  width: 7rem;
+}
+
+.gallery-img {
+  width: 15rem;
+}
+
+.social-img {
+  width: 2.5rem;
+  margin-left: 1rem;
+}
+
+/* ==== Meu CSS ===== */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.max-width {
+  width: 100%;
+  max-width: 80rem;
+  margin: auto;
+}
+
+.sub-title {
+  color: gray;
+  padding: 1.6rem 0;
+}
+
+/* HEADER */
+.header {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.6rem;
+}
+
+.header-container h1 {
+  font-size: 2rem;
+}
+
+.header-container h3 {
+  font-size: 1.6rem;
+  color: gray;
+  cursor: pointer;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-box {
+  display: flex;
+}
+
+.gallery-item {
+  min-width: 22rem;
+  min-height: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.8rem;
+  padding: 3.2rem;
+  background-color: rgb(247, 250, 252);
+  border-radius: 1.2rem;
+  box-shadow: 0.2rem 0.2rem 0.8rem gray;
+}
+
+.gallery-item h4 {
+  color: gray;
+  margin-bottom: 1.6rem;
+}
+
+hr {
+  background-color: rgb(197, 191, 191);
+  width: 20rem;
+  height: 0.6rem;
+  border: 0;
+  border-radius: 0.4rem;
+  margin: 1.6rem;
+}
+
+/* FOOTER */
+.footer {
+  background-color: rgb(247, 250, 252);
+  border-top: 1px solid rgb(197, 191, 191);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  padding: 1.6rem;
+}
+
+@media (max-width: 1366px) {
+  .wrapper {
+    height: auto;
+  }
+  .footer {
+    background-color: white;
+    border: 0;
+  }
+}
+
+@media (max-width: 920px) {
+  .gallery-box {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .sub-title {
+    font-size: 1.6rem;
+  }
+
+  .header h1 {
+    font-size: 1.4rem;
+  }
+
+  .header h3 {
+    font-size: 1rem;
+  }
+
+  .header-img {
+    width: 4rem;
+  }
+
+  .description-container p {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  
+  .gallery-img {
+    width: 12rem;
+  }
+
+  hr {
+    margin: 1.6rem 0;
+    height: 0.4rem;
+  }
+}
