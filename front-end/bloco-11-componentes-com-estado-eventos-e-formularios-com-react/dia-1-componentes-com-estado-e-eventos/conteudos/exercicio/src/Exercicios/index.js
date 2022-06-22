@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import FancyButtons from './IntroducaoAoEstado/fancy-buttons';
+import FancyButtons from './Estado-Eventos-Class-This-Bind/fancy-buttons';
 
 class Exercises extends Component {
   render() {
