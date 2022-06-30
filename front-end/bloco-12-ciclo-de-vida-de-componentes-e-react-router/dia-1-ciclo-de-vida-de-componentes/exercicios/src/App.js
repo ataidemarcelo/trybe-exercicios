@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+// import MyJokeComponent from './components/MyJokeComponent';
+// import ChamadaDosMetodos from './components/ChamadaDosMetodos';
+// import MyInterdimensionalApp from './components/MyInterdimensionalApp';
+import LifeCicleApp from './LifeCycleApp';
+import RandomUser from './RandomUser';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <>
+        <p>=======================RandomUser================================</p>
+        <RandomUser />
+        <p>=======================LifeCicleApp==============================</p>
+        <LifeCicleApp />
+        {/* <p>=======================MyJokeComponent===========================</p>
+        <MyJokeComponent />
+        <p>=======================ChamadaDosMetodos=========================</p>
+        <ChamadaDosMetodos />
+        <p>=======================MyInterdimensionalApp=====================</p>
+        <MyInterdimensionalApp /> */}
+      </>
     </div>
   );
 }
