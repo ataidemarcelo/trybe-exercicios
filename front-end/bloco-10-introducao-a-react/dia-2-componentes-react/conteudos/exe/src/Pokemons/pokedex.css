@@ -1,0 +1,17 @@
+.Pokedex-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.Pokemon-card {
+  flex: 1 1 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 16px;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
